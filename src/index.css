@@ -5,9 +5,20 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #00CCFF; 
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/* Formatação geral dos card */
+
+.cards {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+  justify-content: center;  
+
 }

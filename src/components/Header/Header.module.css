@@ -1,0 +1,39 @@
+.header {   
+    background-image: url(nuvens.png);
+	background-color: #00CCFF;
+	background-size: cover;
+	background-position: center;
+	animation: move-image 250s linear infinite;   
+    position: sticky;
+    top: 0;   
+    width: 100%;
+    height: 220px;
+    display: flex;        
+    align-items: center;
+    justify-content: space-around;
+}
+@keyframes move-image {
+	0% { background-position: 0 0; }
+	100% { background-position: 1500px 0px; }
+   }
+
+.header div {
+    background-image: url(./LogoSamuel.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 44vw; /* Largura da div em relação à viewport */
+    height: 13vh;
+    align-items: center;    
+}
+.header nav {
+    /* margin: 1rem; */
+    font-size: 2rem;
+    bottom: 0;
+    position: absolute;
+}
+
+.header a {
+    text-decoration: none;
+    color:antiquewhite;
+    padding-inline: 10px;
+}

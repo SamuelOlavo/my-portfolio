@@ -1,0 +1,23 @@
+.home {
+    display: flex;         /* Ativa o Flexbox */
+    flex-direction: column; /* Alinha o conteúdo verticalmente */
+    align-items: center;    /* Centraliza horizontalmente */ 
+    justify-content: center; /* Centraliza verticalmente */
+    min-height: 100vh;      /* Garante que a seção ocupe a altura total da tela */
+  } 
+  
+  .home div {
+    width: 850px;	
+    margin-bottom: 2%;
+    padding: 0.5% 2%;
+    border-radius: 8px;  
+    background-color:#f9f9f9;
+    box-shadow: 0 0 30px black;
+    text-align: justify
+  }
+
+.home div p {
+	font: normal normal 20px 'Arial';  
+	margin:0,1% 0;	
+
+  }
