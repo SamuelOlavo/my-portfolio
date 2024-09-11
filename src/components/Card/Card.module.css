@@ -1,6 +1,6 @@
 .card {
     display: flex;
-    padding-bottom: 1rem;   
+    padding: 0.5rem;   
 }
 .card video {
     width: 100%; 
@@ -13,8 +13,14 @@
 .card a {
     text-decoration: none; /* Remove o sublinhado */
     color: inherit;
-    font-size: 12px;
-    background-color: antiquewhite; 
+    font-size: 15px;
+    background-color:#f9f9f9;
+    box-shadow: 0 0 20px black;
     border-radius: 8px;
-    border: 2px red ;
+    padding: 2px;    
+    height: 325px;
+    display: table-header-group;
+    top: 0;
+    
+  
 }

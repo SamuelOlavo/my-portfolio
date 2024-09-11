@@ -1,0 +1,59 @@
+{
+    "informacoesPessoais": {
+      "nome": "Samuel",
+      "sobrenome": "Olavo",      
+      "cidade": "Belo Horizonte",
+      "estado": "MG",
+      "cep": "31630390",
+      "email": "samuelobt@gmail.com",
+      "telefone": "(31) 99310-1769",
+      "site": ""
+    },
+    
+    "objetivo": "Busco consolidar minha experiência como desenvolvedor web, aprimorando minhas habilidades de programação e design para criar sites e aplicativos web de alta qualidade.",
+    "competencias": "Sou apaixonado por temas como acessibilidade e design responsivo. Tenho proficiência em HTML, CSS, JavaScript e jQuery, além de trabalhar com frameworks front-end para criar interfaces de usuário. Além disso, sou experiente em tecnologias como Node.js, MongoDB e APIs REST, bem como em bancos de dados MySQL.",
+    
+    "formacao": [
+      {
+        "instituicao": "POS em Desenvolvimento Web Full Stack - PUC MINAS",
+        "periodo": "2022 - 2024",
+        "descricao": "O curso é baseado nas melhores práticas do desenvolvimento moderno de aplicações Web, apresentando tecnologias de Front End como React e React Native, além de uma visão dos frameworks consolidados no ambiente de Back End que permitem a criação de APIs robustas baseadas em Web Services RESTful."
+      },
+      {
+        "instituicao": "Graduação em Gestão da Tecnologia da Informação - UNNITER",        
+        "periodo": "2018 - 2020",
+        "descricao": "O curso abrange diversas áreas, desde fundamentos de programação e banco de dados até tecnologias da informação, sistemas operacionais, redes, segurança, gerenciamento de projetos e metodologias ágeis. Aprendi a pensar criticamente, a trabalhar de forma colaborativa e a criar soluções inovadoras para problemas complexos."
+      }
+    ],
+    
+    "experiencia": [
+      {
+        "empresa": "Nerus - Analista de Sistemas",    
+        "periodo": "Desde mai de 2021",        
+        "descricao": "Realizo testes no sistema Nérus, verifico necessidades de ajustes e adequações, e realizo as fases de implantação. Proponho melhorias ou novos recursos no sistema. Também assessoro o cliente, orientando-o quanto ao uso do software adquirido, capacito-o quanto às boas práticas, homologo novas integrações desenvolvidas pela Nérus para garantir a qualidade da implantação, e tenho conhecimento de obrigações fiscais e contábeis (Sped Fiscal, Sped Contribuições, Sped Contábil). \nPossuo experiência em implantação de ERP em uma variedade de setores varejistas. Além disso, trabalho com diversas tecnologias, especialmente S.O Linux como plataforma do ERP, Banco de dados Mysql e gerenciamento de contêiner com Docker. Essas tecnologias são fundamentais para a implementação do sistema ERP"
+      },
+      {
+        "empresa": "Nerus - Analista de Suporte",        
+        "periodo": "Nov de 2020 a mai de 2021",        
+        "descricao": "Como Analista de Suporte na Nerus, desenvolvi habilidades técnicas avançadas para diagnosticar e solucionar problemas de software, hardware e rede. Forneci suporte proativo e responsivo aos clientes por canais como telefone e tickets, além de apoiar a implantação de novos processos e manter a Base de Conhecimento Nérus atualizada."
+      },
+      {
+        "empresa": "ORTEP - Analista de Suporte",        
+        "periodo": "Mar de 2014 - nov de 2020",        
+        "descricao": "Desenvolvi habilidades para diagnosticar e solucionar problemas de hardware, software e rede, além de soluções de sistemas operacionais, gerenciando todos os incidentes de suporte de forma eficaz."
+      }
+    ],
+    
+    "projetos": [
+      {
+        "nome": "Aplicação para clínica de estética SIAND",
+        "descricao": "Desenvolvi uma aplicação para clínica de estética SIAND, o cliente tem a flexibilidade de escolher o serviço, a data e horário, direto em um formulário que alimenta a agenda das esteticistas dentro da plataforma que será gerenciada pelos colaboradores da clínica.\nA aplicação segue o padrão arquitetural cliente-servidor  API REST. Ela foi desenvolvida utilizando tecnologias web padrão, como HTML, CSS e JavaScript. Além disso, segue as melhores práticas de codificação e é responsiva, adaptando-se a dispositivos de diferentes tamanhos de tela. O backend é construído com Node.js  trazendo uma abordagem moderna e ágil.  O banco de dados utilizado é o MongoDB, uma solução não relacional que facilita a escalabilidade dos dados.",
+        "link": "https://github.com/SamuelOlavo/API-SIAND"
+      },
+      {
+        "nome": "Página web para a clínica de estética SIAND",
+        "descricao": "Desenvolvi uma página web para a clínica de estética SIAND usando HTML/CSS e JavaScript, adaptando o Bootstrap ao projeto. Utilizei o framework OWL-jQuery para o controle do carrossel e criei uma biblioteca personalizada em JavaScript para o controle do formulário dentro da plataforma. \nO site possui responsividade, está 100% conforme as necessidades de negócio da empresa sendo criado com base em no processo de desenvolvimento de UX Design bem-sucedido em conjunto com o cliente.",
+        "link": "https://samuelolavo.github.io/SIAND"
+      }
+    ]
+}
