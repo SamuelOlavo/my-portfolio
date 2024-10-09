@@ -23,3 +23,22 @@
     font-size: 1rem;
     font-weight: 500;
 }
+
+.img_redes {
+	display: flex; /*conceito de flex box, manda tudo para linha*/
+    flex-direction: row;
+    align-items: center;
+	height: 1px;
+	padding-bottom: 1%;
+}
+
+.redes{
+	transition: 400ms;
+	opacity: 90%;
+	padding-left: 190px;
+	
+	
+}
+.redes:hover{
+	opacity: 1;
+}
