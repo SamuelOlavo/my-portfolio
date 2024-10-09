@@ -1,0 +1,32 @@
+.article {
+    border-bottom: 2px red;
+}
+
+.tituloContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;    
+  }
+  
+  button {
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+   .box {
+    width: 1100px;	
+    margin-bottom: 2%;
+    padding: 1em; /* trocar*/
+    border-radius: 8px;  
+    background-color:#f9f9f9;
+    box-shadow: 0 0 30px black;
+    text-align: justify
+  }
+
+ .box p {
+	font: normal normal 17px 'Arial';  
+	margin:0,1%;	
+  }

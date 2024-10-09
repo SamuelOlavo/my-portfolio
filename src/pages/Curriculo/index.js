@@ -10,13 +10,12 @@ function Curri() {
         <Header />
         <Container>
             <h1>Curriculo</h1>
-        <section className={styles.curri}>           
-                <Secao/>           
-        </section>
+            <section className={styles.curri}>
+                <Secao/>         
+            </section>
         </Container>
         <Footer />
         </>
-        
     );
 }
 

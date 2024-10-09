@@ -3,8 +3,7 @@
       "nome": "Samuel",
       "sobrenome": "Olavo",      
       "cidade": "Belo Horizonte",
-      "estado": "MG",
-      "cep": "31630390",
+      "estado": "MG",      
       "email": "samuelobt@gmail.com",
       "telefone": "(31) 99310-1769",
       "site": ""
@@ -46,7 +45,7 @@
     
     "projetos": [
       {
-        "nome": "Aplicação para clínica de estética SIAND",
+        "nome": "API para agendamento da clínica de estética SIAND",
         "descricao": "Desenvolvi uma aplicação para clínica de estética SIAND, o cliente tem a flexibilidade de escolher o serviço, a data e horário, direto em um formulário que alimenta a agenda das esteticistas dentro da plataforma que será gerenciada pelos colaboradores da clínica.\nA aplicação segue o padrão arquitetural cliente-servidor  API REST. Ela foi desenvolvida utilizando tecnologias web padrão, como HTML, CSS e JavaScript. Além disso, segue as melhores práticas de codificação e é responsiva, adaptando-se a dispositivos de diferentes tamanhos de tela. O backend é construído com Node.js  trazendo uma abordagem moderna e ágil.  O banco de dados utilizado é o MongoDB, uma solução não relacional que facilita a escalabilidade dos dados.",
         "link": "https://github.com/SamuelOlavo/API-SIAND"
       },

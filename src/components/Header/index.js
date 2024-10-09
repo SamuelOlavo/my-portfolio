@@ -9,7 +9,7 @@ function Header() {
             <div> </div>
             </Link>
             <nav>                
-                <a href="#">Contato</a>
+                {/* <a href="#">Contato</a> */}
                 <Link to="/curriculo">Curriculo</Link>               
                 <Link to="/">Sobre</Link>
                 <Link to="/serv">Seviços</Link>
