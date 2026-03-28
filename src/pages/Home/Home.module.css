@@ -1,23 +1,424 @@
-.home {
-    display: flex;         /* Ativa o Flexbox */
-    flex-direction: column; /* Alinha o conteúdo verticalmente */
-    align-items: center;    /* Centraliza horizontalmente */ 
-    justify-content: center; /* Centraliza verticalmente */
-    /* min-height: 100vh;      Garante que a seção ocupe a altura total da tela */
-  } 
-  
-  .home div {
-    width: 850px;	
-    margin-bottom: 2%;
-    padding: 0.5% 2%;
-    border-radius: 8px;  
-    background-color:#f9f9f9;
-    box-shadow: 0 0 30px black;
-    text-align: justify
-  }
+/* Hero Section */
+.hero {
+    min-height: calc(100vh - 180px);
+    display: flex;
+    align-items: center;
+    padding: 2rem 2rem;
+    background: linear-gradient(135deg, var(--background) 0%, var(--accent) 100%);
+    
+}
 
-.home div p {
-	font: normal normal 20px 'Arial';  
-	margin:0,1% 0;	
+.heroContent {
+    /* max-width: 1200px; */
+    margin: 0 auto;
+    display: flex;
+    grid-template-columns: fr 1fr;
+    gap: 10rem;
+    align-items: flex-start;
+    margin-left: ;
+}
 
-  }
+.heroText h1 {
+    font-family: 'Inter', sans-serif;
+    font-size: clamp(5.5rem, 5vw, 4rem);
+    font-weight: 700;
+    color: var(--text-primary);
+    margin: 0 0 1rem 0;
+    line-height: 1.1;
+}
+
+.heroText h2 {
+    font-family: 'Inter', sans-serif;
+    font-size: clamp(1.5rem, 2vw, 2.0rem);
+    font-weight: 100;
+    /* color: var(--primary-light); */
+    margin: 0 0 2rem 0;
+    line-height: 1.2;
+}
+
+.heroText p {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.0rem;
+    color: var(--text-secondary);
+    margin: 0 0 3rem 0;
+    line-height: 1.7;
+    max-width: 200px;
+}
+
+.heroButtons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.primaryButton, .secondaryButton {
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 12px;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.primaryButton {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+    color: var(--text-primary);
+    box-shadow: 0 10px 25px rgba(124, 58, 237, 0.3);
+}
+
+.primaryButton:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 15px 35px rgba(124, 58, 237, 0.4);
+}
+
+.secondaryButton {
+    background: transparent;
+    color: var(--text-primary);
+    border: 2px solid var(--border);
+}
+
+.secondaryButton:hover {
+    background: var(--accent);
+    border-color: var(--primary);
+    transform: translateY(-2px);
+}
+
+.heroImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagePlaceholder {
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 20px 40px rgba(124, 58, 237, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.avatar {
+    font-family: 'Inter', sans-serif;
+    font-size: 4rem;
+    font-weight: 800;
+    color: var(--text-primary);
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Skills Section */
+.skills {
+    padding: 6rem 2rem;
+    background: var(--background);
+}
+
+.sectionTitle {
+    font-family: 'Inter', sans-serif;
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 700;
+    color: var(--text-primary);
+    text-align: center;
+    margin: 0 0 4rem 0;
+    position: relative;
+}
+
+.sectionTitle::after {
+    content: '';
+    position: absolute;
+    bottom: -1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary) 0%, var(--secondary) 100%);
+    border-radius: 2px;
+}
+
+.skillsGrid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.skillCard {
+    background: var(--accent);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 2.5rem 2rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.skillCard::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary) 0%, var(--secondary) 100%);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.skillCard:hover::before {
+    transform: scaleX(1);
+}
+
+.skillCard:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary);
+    box-shadow: 0 15px 30px rgba(124, 58, 237, 0.2);
+}
+
+.skillIcon {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    display: block;
+}
+
+.skillCard h3 {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin: 0 0 1rem 0;
+}
+
+.skillCard p {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    color: var(--text-secondary);
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* About Section */
+.about {
+    padding: 6rem 2rem;
+    background: linear-gradient(135deg, var(--background) 0%, var(--accent) 100%);
+}
+
+.aboutContent {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.aboutContent p {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    line-height: 1.8;
+    margin: 0 0 2rem 0;
+}
+
+.quote {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 300;
+    font-style: italic;
+    color: var(--primary-light);
+    margin: 3rem 0 0 0;
+    padding: 2rem;
+    border-left: 4px solid var(--primary);
+    background: var(--accent);
+    border-radius: 8px;
+    text-align: left;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 1024px) {
+    .heroContent {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        text-align: center;
+    }
+    
+    .heroText p {
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .heroButtons {
+        justify-content: center;
+    }
+    
+    .imagePlaceholder {
+        width: 300px;
+        height: 300px;
+    }
+    
+    .avatar {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 3rem 1.5rem;
+        min-height: calc(100vh - 70px);
+    }
+    
+    .heroContent {
+        gap: 2rem;
+    }
+    
+    .heroText h1 {
+        font-size: clamp(2rem, 6vw, 3rem);
+    }
+    
+    .heroText h2 {
+        font-size: clamp(1.2rem, 4vw, 2rem);
+    }
+    
+    .heroText p {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+    
+    .heroButtons {
+        gap: 0.8rem;
+    }
+    
+    .primaryButton, .secondaryButton {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
+    }
+    
+    .imagePlaceholder {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .avatar {
+        font-size: 2.5rem;
+    }
+    
+    .skills, .about {
+        padding: 4rem 1.5rem;
+    }
+    
+    .skillsGrid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1.5rem;
+    }
+    
+    .skillCard {
+        padding: 2rem 1.5rem;
+    }
+    
+    .skillIcon {
+        font-size: 2.5rem;
+    }
+    
+    .skillCard h3 {
+        font-size: 1.3rem;
+    }
+    
+    .skillCard p {
+        font-size: 0.9rem;
+    }
+    
+    .aboutContent p {
+        font-size: 1rem;
+    }
+    
+    .quote {
+        font-size: 1.1rem;
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 2rem 1rem;
+        min-height: calc(100vh - 60px);
+    }
+    
+    .heroContent {
+        gap: 1.5rem;
+    }
+    
+    .heroText h1 {
+        font-size: clamp(1.8rem, 8vw, 2.5rem);
+    }
+    
+    .heroText h2 {
+        font-size: clamp(1rem, 5vw, 1.5rem);
+    }
+    
+    .heroText p {
+        font-size: 0.95rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .heroButtons {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .primaryButton, .secondaryButton {
+        width: 100%;
+        max-width: 280px;
+        padding: 1rem;
+    }
+    
+    .imagePlaceholder {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .avatar {
+        font-size: 2rem;
+    }
+    
+    .skills, .about {
+        padding: 3rem 1rem;
+    }
+    
+    .skillsGrid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .skillCard {
+        padding: 1.5rem;
+    }
+    
+    .skillIcon {
+        font-size: 2rem;
+    }
+    
+    .skillCard h3 {
+        font-size: 1.2rem;
+    }
+    
+    .skillCard p {
+        font-size: 0.85rem;
+    }
+    
+    .aboutContent p {
+        font-size: 0.95rem;
+    }
+    
+    .quote {
+        font-size: 1rem;
+        padding: 1rem;
+    }
+}
