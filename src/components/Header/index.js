@@ -30,19 +30,19 @@ function Header() {
 
       <nav className={isMenuOpen ? styles.open : ""}>
         <Link to="/" onClick={closeMenu}>
-          // Home
+          <span>//</span> Home
         </Link>
         <Link to="/index.html" onClick={closeMenu}>
-          // Sobre
+          <span>//</span> Sobre
         </Link>
         <Link to="/curriculo" onClick={closeMenu}>
-          // Currículo
+          <span>//</span> Currículo
         </Link>
         <Link to="/serv" onClick={closeMenu}>
-          // Projetos
+          <span>//</span> Projetos
         </Link>
         <Link to="/contato" onClick={closeMenu}>
-          // Contato
+          <span>//</span> Contato
         </Link>
       </nav>
     </header>
