@@ -185,12 +185,22 @@ span {
 
 /* About Section */
 .about {
-    padding: 2rem 2rem;
+    padding: 5rem 10rem;
     background: linear-gradient(135deg, var(--background) 0%, var(--accent) 100%);
+    min-height: calc(120vh - 180px);  
+    align-items: center;
+    
+}
 
+.aboutContainer {
+    display: flex;
+    gap: 3rem;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 .about p {
-    max-width: 800px;
+    max-width: 100%;
     margin: 0 auto;
     font-family: 'Inter', sans-serif;
     font-size: 1.0rem;
@@ -201,8 +211,7 @@ span {
 }
 
 .aboutContent {
-    max-width: 800px;
-    margin: 0 auto;
+    flex: 1;
     text-align: justify;
 }
 
@@ -211,7 +220,30 @@ span {
     font-size: 1.1rem;
     color: var(--text-secondary);
     line-height: 1.7;
-    margin: 0 0 2rem 0;
+}
+
+.formacaoTitle {
+    font-weight: 600;
+    color: var(--primary);    
+    text-align: left;
+}   
+
+.formacao {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    color: var(--text-primary);
+    max-width: 100%;
+    line-height: 1.2;
+    margin: 0.5rem 0 0 0;
+    padding: 0.9rem;
+    border: 2px solid var(--border);
+    background: var(--accent);
+    border-radius: 8px;
+    text-align: left;
+}
+
+.formacao:hover {
+    border: 2px solid var(--primary);
 }
 
 .quote {
@@ -225,7 +257,7 @@ span {
     border-left: 4px solid var(--primary);
     background: var(--accent);
     border-radius: 8px;
-    text-align: left;
+    text-align: center;
 }
 
 /* Mobile Responsiveness */
@@ -299,6 +331,11 @@ span {
     
     .skills, .about {
         padding: 4rem 1.5rem;
+    }
+    
+    .aboutContainer {
+        flex-direction: column;
+        gap: 2rem;
     }
     
     .skillsGrid {
@@ -377,6 +414,11 @@ span {
     
     .skills, .about {
         padding: 3rem 1rem;
+    }
+    
+    .aboutContainer {
+        flex-direction: column;
+        gap: 1.5rem;
     }
     
     .skillsGrid {
