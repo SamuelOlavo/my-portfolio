@@ -8,28 +8,56 @@ function Home() {
     <>
       <Header />
       <Container>
-        <section className={styles.hero}>
+        <section className={styles.hero} id="home">
           <div className={styles.heroContent}>
             <div className={styles.heroText}>
-               <p>
-               samuel@dev:~$ whoami
-
+              <p>
+                samuel@dev:~$ <span>whoami</span>
               </p>
               <h1>Samuel Olavo</h1>
               <h2>
-                > Desenvolvedor Full Stack | Especialista em Automação & DevOps
+                <span>&gt;</span> Desenvolvedor Full Stack | Especialista em
+                Automação & DevOps
               </h2>
-              <p>
-               | Belo Horizonte - MG
-              </p>
+              <p>| Belo Horizonte - MG</p>
               <div className={styles.heroButtons}>
                 <button className={styles.primaryButton}>
                   Entre em contato
                 </button>
-                <button className={styles.secondaryButton}>Ver GitHub</button>
-                <button className={styles.secondaryButton}>Baixar CV</button>
+                <a
+                  className={styles.secondaryButton}
+                  target="_blank"
+                  href="https://github.com/samuelolavo"
+                  rel="noreferrer"
+                >
+                  Ver GitHub
+                </a>
+                <button id="sobre" className={styles.secondaryButton}>
+                  Baixar CV
+                </button>
               </div>
             </div>
+          </div>
+        </section>
+
+        <section className={styles.about}>
+          <p>
+            samuel@dev:~$ <span> cat about.txt</span>
+          </p>
+          <h2 className={styles.sectionTitle}>Sobre Mim</h2>
+          <div className={styles.aboutContent}>
+            <p>
+              Desenvolvedor Full Stack e Analista de Sistemas com sólida
+              experiência em tecnologia. Especialista em Node.js, React e
+              Ecossistema Linux/Docker, com forte atuação na arquitetura de APIs
+              REST e integração de sistemas ERP em larga escala. Expertise em
+              automação de workflows (n8n) e processos fiscais (SPED). Focado em
+              transformar desafios técnicos em soluções escaláveis que geram
+              impacto direto na eficiência operacional.
+            </p>
+            <blockquote className={styles.quote}>
+              "O importante é ter constância."
+            </blockquote>
           </div>
         </section>
 
@@ -61,27 +89,6 @@ function Home() {
                 UI/UX Design, Bootstrap, Tailwind CSS, Figma, Responsividade
               </p>
             </div>
-          </div>
-        </section>
-
-        <section className={styles.about}>
-          <h2 className={styles.sectionTitle} id="sobre">Sobre Mim</h2>
-          <div className={styles.aboutContent}>
-            <p>
-              Sou cristão, pai de família, casado com Andreza que desta união
-              nasceu meu querido filho. Gosto de futebol, filmes, séries e me
-              sinto um cinefilo apaixonado. Sou praticante de corrida de rua e
-              de trilha, possuindo 18km como melhor marca de trilha e 6km de
-              corrida de rua.
-            </p>
-            <p>
-              Prefiro a tranquilidade de um sitio a uma festa agitada, o som dos
-              passaros, a água de uma cachoeira, um cafezinho. Sou adepto ao
-              simples e àquilo que é necessário para viver bem, sem luxos.
-            </p>
-            <blockquote className={styles.quote}>
-              "O importante é ter constância."
-            </blockquote>
           </div>
         </section>
       </Container>
