@@ -27,22 +27,21 @@ function Header() {
       >
         {isMenuOpen ? "✕" : "☰"}
       </button>
-
       <nav className={isMenuOpen ? styles.open : ""}>
         <Link to="/" onClick={closeMenu}>
-          <span>//</span> Home
+          {"// "} Home
         </Link>
         <Link to="/index.html" onClick={closeMenu}>
-          <span>//</span> Sobre
+          {"// "} Sobre
         </Link>
         <Link to="/curriculo" onClick={closeMenu}>
-          <span>//</span> Currículo
+          {"// "} Currículo
         </Link>
         <Link to="/serv" onClick={closeMenu}>
-          <span>//</span> Projetos
+          {"// "} Projetos
         </Link>
         <Link to="/contato" onClick={closeMenu}>
-          <span>//</span> Contato
+          {"// "} Contato
         </Link>
       </nav>
     </header>
