@@ -10,10 +10,7 @@ function Header() {
 
   return (
     <header className={styles.header}>
-      {/* Link comum para a Home */}
-      <Link to="/" onClick={closeMenu}>
-        <div> $samuel.olavo</div>
-      </Link>
+      <div> $ samuel.dev</div>
 
       <button className={styles.mobileMenuButton} onClick={toggleMenu}>
         {isMenuOpen ? "✕" : "☰"}
@@ -28,11 +25,11 @@ function Header() {
           {"// Sobre"}
         </HashLink>
 
-        <Link to="/curriculo" onClick={closeMenu}>
-          {" "}
-          {"// Currículo"}{" "}
-        </Link>
-        <Link to="/serv" onClick={closeMenu}>
+        <HashLink smooth to="/#skills" onClick={closeMenu}>
+          {"// Skills "}
+        </HashLink>
+
+        <Link to="/projetos" onClick={closeMenu}>
           {" "}
           {"// Projetos"}{" "}
         </Link>

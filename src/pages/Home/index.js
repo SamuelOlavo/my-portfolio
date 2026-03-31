@@ -86,19 +86,25 @@ function Home() {
           </div>
         </section>
 
-        <section className={styles.skills}>
-          <h2 className={styles.sectionTitle}>Habilidades</h2>
+        <section className={styles.skills} id="skills">
+          <p>
+            samuel@dev:~$ <span> ls -la skills/</span>
+          </p>
+          <h2 className={styles.sectionTitle}>Competências Técnicas</h2>
           <div className={styles.skillsGrid}>
             <div className={styles.skillCard}>
               <div className={styles.skillIcon}>⚛️</div>
               <h3>Frontend</h3>
-              <p>React, Angular, Vue.js, HTML5, CSS3, JavaScript ES6+</p>
+              <p>
+                React, React Native, Angular, Vue.js, HTML5, CSS3, JavaScript
+                ES6+
+              </p>
             </div>
 
             <div className={styles.skillCard}>
               <div className={styles.skillIcon}>⚙️</div>
               <h3>Backend</h3>
-              <p>Node.js, Express, APIs REST, MySQL, MongoDB, PostgreSQL</p>
+              <p>Node.js, Express, APIs REST, Python, Shell Script</p>
             </div>
 
             <div className={styles.skillCard}>
@@ -112,6 +118,14 @@ function Home() {
               <h3>Design</h3>
               <p>
                 UI/UX Design, Bootstrap, Tailwind CSS, Figma, Responsividade
+              </p>
+            </div>
+            <div className={styles.skillCard}>
+              <div className={styles.skillIcon}>📊</div>
+              <h3>Dados & Automação</h3>
+              <p>
+                n8n (Workflow Automation), MongoDB, MySQL, PostgreSQL,
+                MicrosoftSQL Server
               </p>
             </div>
           </div>

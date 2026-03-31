@@ -9,7 +9,7 @@
 }
 
 .heroContent {
-    /* max-width: 1200px; */
+    max-width: 1200px;
     margin: 0 auto;
     display: flex;
     grid-template-columns: fr 1fr;
@@ -94,8 +94,17 @@ span {
 
 /* Skills Section */
 .skills {
-    padding: 6rem 2rem;
+    padding: 3rem 2rem;
     background: var(--background);
+}
+.skills p {
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.0rem;
+    color: var(--text-secondary);    
+    display: flex;  
+    align-items: flex-start;
 }
 
 .sectionTitle {
@@ -125,14 +134,14 @@ span {
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
+    gap: 2.5rem;
 }
 
 .skillCard {
     background: var(--accent);
     border: 1px solid var(--border);
     border-radius: 16px;
-    padding: 2.5rem 2rem;
+    padding: 1.5rem 1rem;
     text-align: center;
     transition: all 0.3s ease;
     position: relative;
@@ -185,22 +194,22 @@ span {
 
 /* About Section */
 .about {
-    padding: 5rem 10rem;
+    padding: 3rem 5rem;
     background: linear-gradient(135deg, var(--background) 0%, var(--accent) 100%);
-    min-height: calc(120vh - 180px);  
+    min-height: calc(80vh - 120px);  
     align-items: center;
     
 }
 
 .aboutContainer {
     display: flex;
-    gap: 3rem;
+    gap: 2rem;
     align-items: flex-start;
     max-width: 1200px;
     margin: 0 auto;
 }
 .about p {
-    max-width: 100%;
+    max-width: 1200px;
     margin: 0 auto;
     font-family: 'Inter', sans-serif;
     font-size: 1.0rem;
@@ -237,7 +246,7 @@ span {
     margin: 0.5rem 0 0 0;
     padding: 0.9rem;
     border: 2px solid var(--border);
-    background: var(--accent);
+    background: var(--background);
     border-radius: 8px;
     text-align: left;
 }
@@ -246,19 +255,6 @@ span {
     border: 2px solid var(--primary);
 }
 
-.quote {
-    font-family: 'Inter', sans-serif;
-    font-size: 1.3rem;
-    font-weight: 300;
-    font-style: italic;
-    color: var(--primary-light);
-    margin: 3rem 0 0 0;
-    padding: 2rem;
-    border-left: 4px solid var(--primary);
-    background: var(--accent);
-    border-radius: 8px;
-    text-align: center;
-}
 
 /* Mobile Responsiveness */
 @media (max-width: 1024px) {
