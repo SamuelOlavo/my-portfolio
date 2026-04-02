@@ -36,12 +36,14 @@
 }
 
 .heroText p {
-    font-family: 'Inter', sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: 'Fira Code', 'Courier New', monospace;
     font-size: 1.0rem;
-    color: var(--text-secondary);
-    margin: 0 0 3rem 0;
-    line-height: 1.7;
-    max-width: 200px;
+    color: var(--text-secondary);    
+    display: flex;  
+    align-items: flex-start; 
+    padding-bottom: 5%;   
 }
 
 .heroButtons {
@@ -100,7 +102,7 @@ span {
 .skills p {
     max-width: 1200px;
     margin: 0 auto;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Fira Code', 'Courier New', monospace;
     font-size: 1.0rem;
     color: var(--text-secondary);    
     display: flex;  
@@ -211,7 +213,8 @@ span {
 .about p {
     max-width: 1200px;
     margin: 0 auto;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Fira Code', 'Courier New', monospace;
+
     font-size: 1.0rem;
     color: var(--text-secondary);
     line-height: 1.7; 
@@ -376,7 +379,7 @@ span {
     }
     
     .heroText h1 {
-        font-size: clamp(1.8rem, 8vw, 2.5rem);
+        font-size: clamp(2.8rem, 8vw, 2.5rem);
     }
     
     .heroText h2 {

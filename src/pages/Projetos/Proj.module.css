@@ -1,6 +1,6 @@
 /* Projects Section */
 .projectsSection {
-  padding: 3rem 2rem;
+  padding: 1rem 2rem;
   background: linear-gradient(135deg, var(--background) 0%, var(--accent) 100%);
   min-height: calc(100vh - 180px);
 }
@@ -17,16 +17,25 @@
     font-weight: 700;
     color: var(--text-primary);
     text-align: center;
-    margin: 0 0 4rem 0;
     position: relative;
 }
 
 .projectsSubtitle {
   font-family: 'Inter', sans-serif;
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: var(--text-secondary);
-  margin: 0;
-  line-height: 1.6;
+  text-align: center;
+  font-weight: 340;
+}
+
+.projectsSection > p {
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: 'Fira Code', 'Courier New', monospace;
+    font-size: 1.0rem;
+    color: var(--text-secondary);    
+    display: flex;  
+    align-items: flex-start;
 }
 
 /* Projects Grid */
@@ -136,6 +145,7 @@
 
 /* Project Tags */
 .projectTags {
+  padding-top: 10px;
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
@@ -171,8 +181,11 @@
 
 /* Project Footer */
 .projectFooter {
-  padding-top: 1rem;
   border-top: 1px solid var(--border);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 .updateDate {

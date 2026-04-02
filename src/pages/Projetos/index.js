@@ -2,21 +2,22 @@ import Container from "../../components/Container";
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 import styles from "./Proj.module.css";
+import stylesHome from "../Home/Home.module.css";
 
 function Projetos() {
   const projects = [
     {
       id: 1,
-      language: "JavaScript",
-      languageColor: "#F1E05A",
-      name: "my-portfolio",
+      language: "Python",
+      languageColor: "#3572A5",
+      name: "ConsultaCNPJ",
       description:
-        "Projeto React com roteamento contendo 3 páginas principais: Home, Serviços e Currículo",
-      tags: ["react", "javascript", "frontend", "portfolio", "responsive"],
+        "Script Python para automação de enriquecimento de dados cadastrais via BrasilAPI. Armazena dados de empresas consultadas na Receita Federal de forma automatizada.",
+      tags: ["python", "data-analysis", "integration", "pandas"],
       moreTags: 2,
-      updated: "Updated 4 days ago",
-      stars: 1,
-      githubUrl: "https://github.com/samuelolavo/portfolio",
+      updated: "Updated 3 days ago",
+      stars: 5,
+      githubUrl: "https://github.com/SamuelOlavo/ConsultaCNPJ",
     },
     {
       id: 2,
@@ -29,7 +30,7 @@ function Projetos() {
       moreTags: 3,
       updated: "Updated Jan 15, 2025",
       stars: 2,
-      githubUrl: "https://github.com/samuelolavo/automation",
+      githubUrl: "https://github.com/SamuelOlavo/MlHunterTrend",
     },
     {
       id: 3,
@@ -42,32 +43,33 @@ function Projetos() {
       moreTags: 1,
       updated: "Updated 2 weeks ago",
       stars: 3,
-      githubUrl: "https://github.com/samuelolavo/react-dashboard",
+      githubUrl: "https://github.com/SamuelOlavo/API-SIAND",
     },
     {
       id: 4,
       language: "CSS",
       languageColor: "#563D7C",
       name: "Instagram Clone",
-      description: "Clone da página inicial do Instagram.",
+      description:
+        "Clone da página inicial do Instagram com foco em design responsivo e componentização.",
       tags: ["css", "design-system", "components"],
       moreTags: 4,
       updated: "Updated 1 month ago",
       stars: 2,
-      githubUrl: "https://github.com/samuelolavo/css-library",
+      githubUrl: "https://github.com/SamuelOlavo/Instagram",
     },
     {
       id: 5,
-      language: "Python",
-      languageColor: "#3572A5",
-      name: "ConsultaCNPJ",
+      language: "JavaScript",
+      languageColor: "#F1E05A",
+      name: "my-portfolio",
       description:
-        "Script Python para automação de enriquecimento de dados cadastrais via BrasilAPI. Armazena dados de empresas consultadas na Receita Federal de forma automatizada.",
-      tags: ["python", "data-analysis", "integration", "pandas"],
+        "Projeto React com roteamento contendo 3 páginas principais: Home, Serviços e Currículo.",
+      tags: ["react", "javascript", "frontend", "portfolio", "responsive"],
       moreTags: 2,
-      updated: "Updated 3 days ago",
-      stars: 5,
-      githubUrl: "https://github.com/samuelolavo/data-analysis",
+      updated: "Updated 4 days ago",
+      stars: 1,
+      githubUrl: "https://github.com/SamuelOlavo/my-portfolio",
     },
     {
       id: 6,
@@ -80,7 +82,7 @@ function Projetos() {
       moreTags: 3,
       updated: "Updated 1 week ago",
       stars: 4,
-      githubUrl: "https://github.com/samuelolavo/node-api",
+      githubUrl: "https://github.com/SamuelOlavo/netflix-clone",
     },
     {
       id: 7,
@@ -93,7 +95,7 @@ function Projetos() {
       moreTags: 3,
       updated: "Updated 1 week ago",
       stars: 4,
-      githubUrl: "https://github.com/samuelolavo/node-api",
+      githubUrl: "https://github.com/SamuelOlavo/SIAND",
     },
   ];
 
@@ -101,12 +103,15 @@ function Projetos() {
     <>
       <Header />
       <Container>
-        <section className={styles.projectsSection}>
+        <section className={styles.projectsSection} id="projects">
+          <p>
+            samuel@dev:~$ <span> git log --all</span>
+          </p>
           <div className={styles.projectsHeader}>
-            <h1 className={styles.projectsTitle}>Projetos em Destaque</h1>
-            <p className={styles.projectsSubtitle}>
+            <h1 className={stylesHome.sectionTitle}>Projetos em Destaque</h1>
+            <h4 className={styles.projectsSubtitle}>
               Confira alguns dos meus projetos mais relevantes
-            </p>
+            </h4>
           </div>
 
           <div className={styles.projectsGrid}>

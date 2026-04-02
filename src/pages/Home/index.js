@@ -19,7 +19,7 @@ function Home() {
                 <span>&gt;</span> Desenvolvedor Full Stack | Especialista em
                 Automação & DevOps
               </h2>
-              <p>| Belo Horizonte - MG</p>
+              <p>📍 Belo Horizonte, MG</p>
               <div className={styles.heroButtons}>
                 <button className={styles.primaryButton}>
                   Entre em contato
@@ -32,7 +32,20 @@ function Home() {
                 >
                   Ver GitHub
                 </a>
-                <button className={styles.secondaryButton}>Baixar CV</button>
+                <button
+                  className={styles.secondaryButton}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    const link = document.createElement("a");
+                    link.href = "/curriculo.pdf";
+                    link.download = "Curriculo - Samuel Olavo.pdf";
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+                  }}
+                >
+                  Baixar CV
+                </button>
               </div>
             </div>
           </div>

@@ -1,0 +1,208 @@
+/* Contato Section */
+.contato {
+    min-height: calc(100vh - 180px);
+    padding: 2rem 2rem;
+    background: linear-gradient(135deg, var(--background) 0%, var(--accent) 100%);
+}
+
+
+
+.sectionTitle {
+    font-family: 'Inter', sans-serif;
+    font-size: clamp(2.5rem, 4vw, 3.5rem);
+    font-weight: 700;
+    color: var(--text-primary);
+    text-align: center;
+    margin: 2rem 0 3rem 0;
+    position: relative;
+}
+
+.sectionTitle::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: var(--primary);
+    border-radius: 2px;
+}
+
+.contatoContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: start;
+}
+
+.contatoContent {
+    padding: 2rem;
+}
+
+.contatoContent p {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+}
+
+.contatoInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.infoItem {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    color: var(--text-primary);
+}
+
+.infoIcon {
+    font-size: 1.2rem;
+    color: var(--primary);
+    min-width: 24px;
+}
+
+/* Form Styles */
+.contatoForm {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 2.5rem;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.formGroup {
+    margin-bottom: 1rem;
+}
+
+.formGroup label {
+    display: block;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+    text-align: start;
+}
+
+.formGroup input,
+.formGroup textarea {
+    width: 100%;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    color: var(--text-primary);
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+.formGroup input:focus,
+.formGroup textarea:focus {
+    outline: none;
+    border-color: var(--primary);
+    background: rgba(255, 255, 255, 0.12);
+    box-shadow: 0 0 0 3px rgba(147, 51, 234, 0.1);
+}
+
+.formGroup input::placeholder,
+.formGroup textarea::placeholder {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.formGroup textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.submitButton {
+    width: 100%;
+    padding: 1rem 2rem;
+    background: var(--primary);
+    border: none;
+    border-radius: 8px;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.submitButton:hover {
+    background: var(--primary-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(147, 51, 234, 0.3);
+}
+
+.submitButton:active {
+    transform: translateY(0);
+}
+
+/* Terminal style prompt */
+.contato > p {
+    font-family: 'Fira Code', 'Courier New', monospace;
+    color: var(--text-secondary);
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;  
+    align-items: flex-start;
+}
+
+.contato > p span {
+    color: var(--primary);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contatoContainer {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .contatoForm {
+        padding: 1.5rem;
+    }
+    
+    .sectionTitle {
+        font-size: clamp(2rem, 5vw, 2.5rem);
+    }
+    
+    .contatoContent {
+        padding: 1rem;
+        text-align: center;
+    }
+    
+    .contatoInfo {
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .contato {
+        padding: 1rem;
+    }
+    
+    .contatoForm {
+        padding: 1rem;
+    }
+    
+    .formGroup input,
+    .formGroup textarea {
+        padding: 0.8rem;
+    }
+}
