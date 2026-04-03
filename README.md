@@ -1,70 +1,140 @@
-# Getting Started with Create React App
+# Portfólio - Samuel Olavo
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 🚀 Sobre o Projeto
 
-## Available Scripts
+Este é o meu portfólio pessoal desenvolvido com React, apresentando minhas habilidades, experiências e projetos como Desenvolvedor Full Stack e especialista em Automação & DevOps.
 
-In the project directory, you can run:
+## 🎯 Objetivo
 
-### `npm start`
+Criar uma presença online profissional que demonstre minhas competências técnicas e experiências de forma interativa e moderna, com um design inspirado em terminal Linux para refletir minha identidade como desenvolvedor.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## ✨ Funcionalidades
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Design Responsivo**: Interface adaptável para desktop, tablet e mobile
+- **Navegação Suave**: Scroll suave entre seções com âncoras
+- **Download de CV**: Funcionalidade para download do currículo em PDF
+- **Links Externos**: Integração com GitHub e outras redes profissionais
+- **Tema Terminal**: Design inspirado em linha de comando Linux
 
-### `npm test`
+## 🛠️ Tecnologias Utilizadas
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **React 18.3.1** - Biblioteca principal para construção da UI
+- **React Router DOM** - Navegação entre páginas
+- **React Router Hash Link** - Navegação com âncoras suaves
+- **CSS Modules** - Estilização componentizada e isolada
+- **JavaScript ES6+** - Lógica moderna da aplicação
 
-### `npm run build`
+## 📁 Estrutura do Projeto
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+my-page/
+├── public/
+│   ├── curriculo.pdf          # Currículo para download
+│   ├── images/                # Imagens do projeto
+│   ├── videos/                # Vídeos do projeto
+│   └── index.html             # Template HTML
+├── src/
+│   ├── components/            # Componentes reutilizáveis
+│   │   ├── Container/
+│   │   ├── Footer/
+│   │   └── Header/
+│   ├── pages/
+│   │   └── Home/              # Página principal
+│   ├── App.js                 # Componente principal
+│   └── index.js               # Ponto de entrada
+└── package.json               # Dependências e scripts
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🚀 Como Executar
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Pré-requisitos
+- Node.js (versão 14 ou superior)
+- npm ou yarn
 
-### `npm run eject`
+### Instalação
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+# Clone o repositório
+git clone <URL-do-repositório>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Entre no diretório
+cd my-page
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# Instale as dependências
+npm install
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Executando em Desenvolvimento
 
-## Learn More
+```bash
+npm start
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+A aplicação será iniciada em `http://localhost:3000`
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Build para Produção
 
-### Code Splitting
+```bash
+npm run build
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+O projeto será compilado na pasta `build` pronto para deploy.
 
-### Analyzing the Bundle Size
+## 🎨 Design e UI
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+O portfólio foi desenvolvido com uma identidade visual única, inspirada em terminais Linux, apresentando:
 
-### Making a Progressive Web App
+- **Paleta de Cores**: Tons escuros com destaques verdes e azuis
+- **Tipografia**: Fontes monoespaçadas para dar aspecto de código
+- **Layout**: Estrutura limpa e organizada com seções bem definidas
+- **Responsividade**: Adaptável para diferentes tamanhos de tela
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 📱 Seções
 
-### Advanced Configuration
+- **Home**: Apresentação pessoal e informações de contato
+- **Sobre Mim**: Biografia e formação acadêmica
+- **Competências**: Habilidades técnicas organizadas por categorias
+- **Projetos**: Destaque para projetos relevantes (em desenvolvimento)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 🔧 Desenvolvimento
 
-### Deployment
+### Componentes Principais
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- **Header**: Navegação principal com links para seções
+- **Home**: Conteúdo principal com apresentação
+- **Footer**: Informações de rodapé e links
 
-### `npm run build` fails to minify
+### Estilização
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+O projeto utiliza CSS Modules para manter os estilos isolados e evitar conflitos, garantindo manutenibilidade e escalabilidade.
+
+## 🚀 Deploy
+
+O projeto está pronto para ser deployado em plataformas como:
+- Vercel
+- Netlify
+- GitHub Pages
+- Servidores tradicionais com Apache/Nginx
+
+## 📧 Contato
+
+- **GitHub**: [https://github.com/samuelolavo](https://github.com/samuelolavo)
+- **Email**: Disponível através do botão "Entre em contato"
+
+## 🔄 Manutenção
+
+O projeto está em constante evolução com melhorias e novas funcionalidades planejadas:
+
+- [ ] Seção de projetos detalhados
+- [ ] Sistema de blog
+- [ ] Integração com APIs
+- [ ] Otimização SEO
+- [ ] Testes automatizados
+
+## 📄 Licença
+
+Este projeto está sob licença MIT. Sinta-se livre para usar o código como inspiração para seu próprio portfólio.
+
+---
+
+**Desenvolvido com ❤️ por Samuel Olavo**
