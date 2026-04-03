@@ -64,7 +64,7 @@ function Projetos() {
       languageColor: "#F1E05A",
       name: "my-portfolio",
       description:
-        "Projeto React com roteamento contendo 3 páginas principais: Home, Serviços e Currículo.",
+        "Meu portfólio pessoal desenvolvido com React, apresentando minhas habilidades, experiências e projetos como Desenvolvedor Full Stack e especialista em Automação & DevOps.",
       tags: ["react", "javascript", "frontend", "portfolio", "responsive"],
       moreTags: 2,
       updated: "Updated 4 days ago",

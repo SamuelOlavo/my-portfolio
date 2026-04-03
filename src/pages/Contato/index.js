@@ -54,6 +54,10 @@ function Contato() {
                   <span>samuelobt@gmail.com</span>
                 </div>
                 <div className={styles.infoItem}>
+                  <span className={styles.infoIcon}>📞</span>
+                  <span>31 99310-1769</span>
+                </div>
+                <div className={styles.infoItem}>
                   <span className={styles.infoIcon}>📍</span>
                   <span>Belo Horizonte - MG</span>
                 </div>
