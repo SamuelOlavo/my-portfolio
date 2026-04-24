@@ -21,9 +21,9 @@ function Home() {
               </h2>
               <p>📍 Belo Horizonte, MG</p>
               <div className={styles.heroButtons}>
-                <button className={styles.primaryButton}>
+                <a href="/contato" className={styles.primaryButton}>
                   Entre em contato
-                </button>
+                </a>
                 <a
                   className={styles.secondaryButton}
                   target="_blank"
